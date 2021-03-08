@@ -28,7 +28,10 @@
         context.lineTo(175,50);
         context.lineTo(225,150);
         context.fill();
-
+     
+     var vid = document.getElementById("race");
+     vid.autoplay = true;
+     vid.load();
       }
     </script>
     <style type="text/css">
@@ -36,7 +39,7 @@
     </style>
   </head>
   <body onload="drawPicture();">
-    <video poster="dog6.jpg" autoplay>
+    <video id="race" poster="dog6.jpg">
 	    <source src="./dog6/rb6d_001.mp4" type="video/mp4" codecs="avc1.4D401E, mp4a.40.2" />
 	    <p>Carrera No:</p>
     </video>
