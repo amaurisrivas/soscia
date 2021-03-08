@@ -41,11 +41,12 @@ setInterval(function() {
      let num = Math.floor(Math.random() * (4 - 1)) + 1;
      let str = num.toString().padStart(3, "0")
      let archivo = "./dog6/rb6d_" + str + ".mp4";
+     document.getElementById("carrera").innerHTML = achivo;
      vid.setAttribute('src', archivo);	      
      vid.autoplay = true;
      vid.load();
      vid.play();
-},6000);
+},20000);
 	    
     </script>
     <style type="text/css">
@@ -61,6 +62,7 @@ setInterval(function() {
     There is supposed to be an example drawing here, but it's not important.
     </canvas>
 	  <h1 id="archivo">last 12:40</h1>
-	  <h1>last 12:43</h1>
+	  <h1 id="carera">carrera</h1>
+	  <h1>last 12:49</h1>
   </body>
 </html>
