@@ -7,13 +7,11 @@ var myVar = setInterval(myTimer, 1000);
 }
 setInterval(function() {
    dograce();
-},50000);setInterval(function() {
-   dograce();
-},50000);
+},80000);
 
 function dograce(){
     var vid = document.getElementById("race"); 
-    let num = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
+    let num = Math.floor(Math.random() * (360 - 350 + 1)) + 350;
     let str = num.toString().padStart(3, "0")
     let archivo = "./dog6/rb6d_" + str + ".mp4";
     document.getElementById("carrera").innerHTML = archivo;
