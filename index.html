@@ -33,9 +33,11 @@
      let num = Math.floor(Math.random() * (3 - 1)) + 1;
      let str = num.toString().padStart(3, "0")
      let archivo = "./dog6/rb6d_" + str + ".mp4";
+     document.getElementById("archivo").innerHTML = archivo;
      vid.setAttribute('src', archivo);	      
      vid.autoplay = true;
      vid.load();
+     vid.play();      
     }
     </script>
     <style type="text/css">
@@ -50,6 +52,6 @@
     <canvas id="example" width="260" height="200">
     There is supposed to be an example drawing here, but it's not important.
     </canvas>
-	  <h1>last 12:05</h1>
+	  <h1 id="archivo">last 12:14</h1>
   </body>
 </html>
